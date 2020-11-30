@@ -1,0 +1,2 @@
+class SubmittedWord < ApplicationRecord
+end
