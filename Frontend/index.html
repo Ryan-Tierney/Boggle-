@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+        <link rel="stylesheet" href="./styles/main.css"> 
+        <meta charset="="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BOGGLE</title>
+    </head> 
+
+    <body> 
+        <div id="header">BOGGLE</div>
+        <div id="time-container"> 
+            <form id='user-form'>
+                <label for='username'> Your name:</label>
+                <input type='text' name='username' id='username'> 
+                <button type='submit' value="submit" id=start-timer'>New game</button>
+            </form>
+            </div> 
+            <div class="current-word" id="current-word-container" style='visibility: hidden'>
+            <h2>Current Word:</h2>
+            <p id="letter"></p>
+        </div>
+        <div id='word-control-buttons' style='visibility: hidden'>
+            <button id='add-word'>Add Word</button>
+            <button id='undo'>Undo</button>
+            <button id='clear-board'>Clear</button>
+        </div>
+        <div id="board-container">
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+            <div class="empty-item"></div>
+        </div>
+        <br> 
+
+        <div id="words-container" style='visibility: hidden'>
+            <ul id="submitted-words-ul">
+            </ul>
+        </div>
+        <div id='finished'> 
+            <button class="done" id="done" style='visibility: hidden'>Done!</button>
+        </div>
+        <div class='other-features'> 
+            <button id='start-over'>Start Over</button><br>
+            <button id='Help'>Instructions</button>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id='score-close'>&times;</span>
+                <div id="modal-header">Final Score</div>
+                <p id='final-score'>Your Score is</p>
+                <div id='score-num'> </div>
+            </div>
+        </div>
+
+        <div id="myWelcomeModal" class="welcome-modal">
+            <div class="welcome-modal-content">
+                <span class="close" id='welcome-close'>&times;</span>
+                <div id="welcome-modal-header">Welcome!</div>
+                <p id='welcome-text'></p>
+            </div>
+        </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
